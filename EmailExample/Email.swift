@@ -2,14 +2,11 @@
 //  Email.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/18/17.
+//  Created by Aron Lopez on 9/24/17.
 //  Copyright © 2017 Byrne. All rights reserved.
 //
 
 import Foundation
-
-//TODO: Define my email class
-//NEEDS: properties for sender, subject, contents; class initializer
 
 class Email {
     let sender: String

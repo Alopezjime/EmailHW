@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A0856B011F709103008DF071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0856B001F709103008DF071 /* AppDelegate.swift */; };
-		A0856B031F709103008DF071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0856B021F709103008DF071 /* ViewController.swift */; };
 		A0856B061F709104008DF071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0856B041F709104008DF071 /* Main.storyboard */; };
 		A0856B081F709104008DF071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0856B071F709104008DF071 /* Assets.xcassets */; };
 		A0856B0B1F709104008DF071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0856B091F709104008DF071 /* LaunchScreen.storyboard */; };
-		A0856B131F7091F1008DF071 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0856B121F7091F1008DF071 /* Email.swift */; };
-		A0856B151F709548008DF071 /* RootTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0856B141F709548008DF071 /* RootTVC.swift */; };
+		EC2045631F774E3300D217DA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2045621F774E3300D217DA /* MainTableViewController.swift */; };
+		EC2045651F774EC700D217DA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2045641F774EC700D217DA /* EmailViewController.swift */; };
+		EC2045671F774F0500D217DA /* MainDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2045661F774F0500D217DA /* MainDetailTableViewController.swift */; };
+		EC2045691F78C13A00D217DA /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2045681F78C13A00D217DA /* Email.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0856AFD1F709103008DF071 /* EmailExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0856B001F709103008DF071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0856B021F709103008DF071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0856B051F709104008DF071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0856B071F709104008DF071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0856B0A1F709104008DF071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0856B0C1F709104008DF071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0856B121F7091F1008DF071 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
-		A0856B141F709548008DF071 /* RootTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTVC.swift; sourceTree = "<group>"; };
+		EC2045621F774E3300D217DA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		EC2045641F774EC700D217DA /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		EC2045661F774F0500D217DA /* MainDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailTableViewController.swift; sourceTree = "<group>"; };
+		EC2045681F78C13A00D217DA /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				A0856B001F709103008DF071 /* AppDelegate.swift */,
-				A0856B121F7091F1008DF071 /* Email.swift */,
-				A0856B021F709103008DF071 /* ViewController.swift */,
-				A0856B141F709548008DF071 /* RootTVC.swift */,
 				A0856B041F709104008DF071 /* Main.storyboard */,
+				EC2045681F78C13A00D217DA /* Email.swift */,
+				EC2045621F774E3300D217DA /* MainTableViewController.swift */,
+				EC2045661F774F0500D217DA /* MainDetailTableViewController.swift */,
+				EC2045641F774EC700D217DA /* EmailViewController.swift */,
 				A0856B071F709104008DF071 /* Assets.xcassets */,
 				A0856B091F709104008DF071 /* LaunchScreen.storyboard */,
 				A0856B0C1F709104008DF071 /* Info.plist */,
@@ -97,11 +100,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Byrne;
 				TargetAttributes = {
 					A0856AFC1F709103008DF071 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,10 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0856B031F709103008DF071 /* ViewController.swift in Sources */,
-				A0856B151F709548008DF071 /* RootTVC.swift in Sources */,
+				EC2045651F774EC700D217DA /* EmailViewController.swift in Sources */,
+				EC2045671F774F0500D217DA /* MainDetailTableViewController.swift in Sources */,
+				EC2045631F774E3300D217DA /* MainTableViewController.swift in Sources */,
+				EC2045691F78C13A00D217DA /* Email.swift in Sources */,
 				A0856B011F709103008DF071 /* AppDelegate.swift in Sources */,
-				A0856B131F7091F1008DF071 /* Email.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +186,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -189,7 +196,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,7 +242,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -239,7 +252,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,7 +289,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECB.EmailExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -284,7 +302,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECB.EmailExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -307,6 +326,7 @@
 				A0856B111F709104008DF071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

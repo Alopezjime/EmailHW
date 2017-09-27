@@ -16,21 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //TODO: populate our datapool with initial emails
-        //NEED: access to datapool object
-        let splitVC = self.window?.rootViewController as! UISplitViewController
-        let navVC = splitVC.viewControllers.first as! UINavigationController
-        let rootTVC = navVC.viewControllers[0] as! RootTVC
-        
-        rootTVC.emails.append(Email(sender: "fellow.student@asu.edu", subject: "Project Question", contents: "Hi help me please"))
-        rootTVC.emails.append(Email(sender: "prof@asu.edu", subject: "Homework", contents: "Hi turn it in please"))
-        rootTVC.emails.append(Email(sender: "alert@asu.edu", subject: "Bees", contents: "Hi help me please there are bees"))
-        
-        let detailVC = splitVC.viewControllers.last as! ViewController
-        
-        rootTVC.delegate = detailVC
-        
         return true
     }
 
@@ -56,6 +41,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-
