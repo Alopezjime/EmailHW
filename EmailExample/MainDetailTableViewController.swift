@@ -1,21 +1,14 @@
 //
-//  RootTVC.swift
+//  MainDetailTableViewController.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/18/17.
+//  Created by Julio Hernandez-Duran on 9/23/17.
 //  Copyright © 2017 Byrne. All rights reserved.
 //
 
 import UIKit
 
-protocol CellSelectedDelegate {
-    func read(email: Email)
-}
-
-class RootTVC: UITableViewController {
-    
-    var emails = [Email]()
-    var delegate: CellSelectedDelegate?
+class MainDetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +17,7 @@ class RootTVC: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,34 +29,23 @@ class RootTVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return emails.count
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: react to user selecting row
-        //I want the detail view controller to update based on the row that I selected
-        
-        let selectedEmail = emails[indexPath.row]
-        delegate?.read(email: selectedEmail)
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let currentEmail = emails[indexPath.row]
-        cell.textLabel?.text = currentEmail.subject
-        cell.detailTextLabel?.text = currentEmail.sender
 
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.

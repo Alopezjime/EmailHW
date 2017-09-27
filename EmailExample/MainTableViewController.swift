@@ -1,17 +1,14 @@
 //
-//  MenuTVC.swift
+//  MainTableViewController.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/20/17.
+//  Created by Julio Hernandez-Duran on 9/23/17.
 //  Copyright © 2017 Byrne. All rights reserved.
 //
 
 import UIKit
 
-class MenuTVC: UITableViewController {
-    
-    var dataDictionary: [String:Array<Email>] = [:]
-    var selectedRow = ""
+class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +17,7 @@ class MenuTVC: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,38 +29,23 @@ class MenuTVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let keywords = Array(dataDictionary.keys)
-        cell.textLabel?.text = keywords[indexPath.row]
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: react to user selecting row
-        //I want the detail view controller to update based on the row that I selected
-        
-        print("In didSelectRowAt")
-        //TODO: get cell information
-        let keywords = Array(dataDictionary.keys)
-        selectedRow = keywords[indexPath.row]
-        
-        //call segue manually
-        performSegue(withIdentifier: "cellSelected", sender: self)
-    }
- 
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -100,22 +82,14 @@ class MenuTVC: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        let destVC = segue.destination as! RootTVC
-        destVC.emails = dataDictionary[selectedRow]!
-        
-        //1. which button got pressed
-        //2. up-to-date data
-        
-        print("In prepare")
     }
-    
+    */
 
 }
